@@ -313,7 +313,7 @@ func RunRepoBootstrap(ctx context.Context, opts *RepoBootstrapOptions) error {
 
 	if !opts.HidePassword {
 		log.G(ctx).Printf("")
-		log.G(ctx).Infof("argocd initialized. password: %s", passwd)
+		log.G(ctx).Infof("argocd initialized.")
 		log.G(ctx).Infof("run:\n\n    kubectl port-forward -n %s svc/argocd-server 8080:80\n\n", opts.Namespace)
 	}
 
